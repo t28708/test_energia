@@ -1,5 +1,5 @@
 <h1>Инструкция</h1>
-git clone https://github.com/StephDietz/twitter-clone {name_folder}
+git clone https://github.com/t28708/test_energia {name_folder}
 
 <ul>
   <li>дамп БД лежит в папке dump-sql</li>

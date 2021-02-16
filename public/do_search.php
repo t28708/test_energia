@@ -35,7 +35,8 @@ $sql = "SELECT posts.title as title, comments.body as comments
     {
         echo "<ul>";
         while ($q = mysqli_fetch_array($result)) {
-            echo "<li><b>title: </b>{$q['title']} **** <b>comment: </b>{$q['comments']}</li>";
+            $comm = str_replace($word, '<b><i>'.$word.'</i></b>', $q['comments']);
+            echo "<li><b>title: </b>{$q['title']} **** <b>comment: </b>{$comm}</li>";
         }
         echo "</ul>";
     }
